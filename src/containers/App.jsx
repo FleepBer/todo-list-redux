@@ -1,4 +1,8 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+
+import store from '../store';
+
 import IncompleteTasks from './IncompleteTasks';
 import CompleteTasks from './CompleteTasks';
 import AddNewItem from './AddNewItem';
@@ -7,15 +11,17 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="container">
+    <Provider store={store}>
+      <div className="container">
 
-      <AddNewItem /> 
+        <AddNewItem /> 
 
-      <IncompleteTasks />
+        <IncompleteTasks />
 
-      <CompleteTasks />
-    </div>
-  );
+        <CompleteTasks />
+      </div>
+    </Provider>
+  )
 };
 
 export default App;
