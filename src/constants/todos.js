@@ -2,7 +2,7 @@
  * Constants / Action Types
  */
 
- export const todosActionsTypes = {
+ export const todosActionTypes = {
      ADD_TODO: 'ADD_TODO',
      DELETE_TODO: 'DELETE_TODO',
      EDIT_TODO: 'EDIT_TODO',
